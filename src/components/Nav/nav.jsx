@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ContextCart } from "../Cart/cartContext";
-import "./Nav.css";
+import "./nav.css";
 
 export const Nav = () => {
     const { arcart } = useContext(ContextCart);
