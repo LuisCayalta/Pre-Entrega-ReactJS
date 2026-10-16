@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "ASUS ROG Strix GeForce RTX 2080",
+        "description": "Tarjeta gráfica de alto rendimiento con refrigeración avanzada e iluminación RGB.",
+        "price": 450,
+        "image": "/img/2080rog.jpg",
+        "category": "Graphics Cards"
+    },
+    {
+        "id": 2,
+        "name": "AMD Ryzen 5 5700G",
+        "description": "Procesador de 8 núcleos y 16 hilos con gráficos integrados Radeon Vega.",
+        "price": 220,
+        "image": "/img/5700g.jpg",
+        "category": "Processors"
+    },
+    {
+        "id": 3,
+        "name": "AMD Radeon RX 6700 XT",
+        "description": "Gráfica ideal para gaming en 1440p con arquitectura AMD RDNA 2.",
+        "price": 380,
+        "image": "/img/6700xt.jpg",
+        "category": "Graphics Cards"
+    },
+    {
+        "id": 4,
+        "name": "Gigabyte B450M Aorus Elite",
+        "description": "Placa madre formato M-ATX compatible con procesadores AMD Ryzen AM4.",
+        "price": 95,
+        "image": "/img/b450m.jpg",
+        "category": "Motherboards"
+    },
+    {
+        "id": 5,
+        "name": "Intel Core i5 Processor",
+        "description": "Procesador equilibrado para multitarea, productividad y gaming fluido.",
+        "price": 180,
+        "image": "/img/i5core.jpg",
+        "category": "Processors"
+    },
+    {
+        "id": 6,
+        "name": "ASRock Z390 Phantom Gaming 4",
+        "description": "Placa madre robusta orientada a procesadores Intel de octava y novena generación.",
+        "price": 130,
+        "image": "/img/z390.jpg",
+        "category": "Motherboards"
+    }
+]

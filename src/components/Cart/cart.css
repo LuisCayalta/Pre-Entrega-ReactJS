@@ -1,0 +1,229 @@
+
+.cart-section {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+    color: #f5f5f5;
+}
+
+.cart-eyebrow {
+    margin: 0 0 0.5rem;
+    color: #e4ae70;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.cart-title {
+    margin: 0 0 2rem;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    letter-spacing: -0.04em;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: #151515;
+    border: 1px solid #303030;
+    border-radius: 12px;
+}
+
+.cart-product-info {
+    min-width: 0;
+}
+
+.cart-product-id {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.cart-product-name {
+    margin: 0.4rem 0;
+    font-size: 1.1rem;
+    overflow-wrap: anywhere;
+}
+
+.cart-unit-price {
+    margin: 0;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.cart-product-subtotal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.4rem;
+    text-align: right;
+}
+
+.cart-product-subtotal span {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.cart-product-subtotal strong {
+    color: #e4ae70;
+    font-size: 1.15rem;
+    overflow-wrap: anywhere;
+}
+
+.cart-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    grid-column: 1 / -1;
+    padding-top: 1rem;
+    border-top: 1px solid #303030;
+}
+
+.quantity-control {
+    display: grid;
+    grid-template-columns: 40px minmax(30px, 1fr) 40px;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #222;
+    color: #f5f5f5;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.quantity-button:hover {
+    background: #333;
+    border-color: #e4ae70;
+}
+
+.quantity-indicator {
+    min-width: 30px;
+    color: #f5f5f5;
+    font-weight: 700;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.remove-button {
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #65413a;
+    border-radius: 8px;
+    background: transparent;
+    color: #e7a092;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.remove-button:hover {
+    background: #35201d;
+}
+
+.quantity-button:focus-visible,
+.remove-button:focus-visible {
+    outline: 2px solid #e4ae70;
+    outline-offset: 3px;
+}
+
+.cart-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: #101010;
+    border: 1px solid #353535;
+    border-radius: 12px;
+}
+
+.cart-summary span {
+    color: #c0c0c0;
+    font-weight: 600;
+}
+
+.cart-summary strong {
+    color: #e4ae70;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    overflow-wrap: anywhere;
+}
+
+.cart-empty {
+    padding: 3rem 1.5rem;
+    background: #151515;
+    border: 1px solid #303030;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cart-empty h2 {
+    margin-top: 0;
+}
+
+.cart-empty p {
+    margin-bottom: 0;
+    color: #999;
+}
+
+@media (max-width: 520px) {
+    .cart-section {
+        padding-top: 1.5rem;
+    }
+
+    .cart-item {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .cart-product-name {
+        font-size: 1rem;
+    }
+
+    .cart-product-subtotal strong {
+        font-size: 1rem;
+    }
+
+    .cart-action {
+        flex-wrap: wrap;
+    }
+
+    .quantity-control {
+        grid-template-columns: 36px minmax(24px, 1fr) 36px;
+        gap: 0.25rem;
+    }
+
+    .quantity-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .remove-button {
+        padding: 0.6rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .quantity-button,
+    .remove-button {
+        transition: none;
+    }
+}

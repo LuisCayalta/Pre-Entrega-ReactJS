@@ -1,0 +1,44 @@
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    padding: 1rem clamp(1rem, 4vw, 3rem);
+
+    background: #111111;
+    color: #f5f5f5;
+    border-bottom: 1px solid #353535;
+}
+
+.site-logo {
+    margin: 0;
+    color: #f5f5f5;
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    white-space: nowrap;
+}
+
+.site-logo span {
+    color: #e4ae70;
+}
+
+.navStyle {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 520px) {
+    .site-header {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .navStyle {
+        width: 100%;
+        justify-content: center;
+    }
+}
